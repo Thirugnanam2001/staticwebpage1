@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table Design</title>
+         
+    <style>
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border:1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+    </style>
+   </head>
+    <body>
+        <table>
+        <tr>
+            <th>Customer</th>
+            <th colspan="2">Items</th>
+            <th colspan="2">Payments</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Customer Name</td>
+            <td>Item1</td>
+            <td>$400.00</td>
+            <td rowspan="2">12 sep 2018</td>
+            <td rowspan="2">$3,000.00</td>
+        </tr>
+        <tr>
+            <td>Item2</td>
+            <td>$200.00</td>
+        </tr>
+        <tr>
+            <td>Item3</td>
+            <td>$500.00</td>
+            <td>18 Sep 2018</td>
+            <td>$2,000.00</td>
+        </tr>
+        </table>
+    </body>
+</html>
