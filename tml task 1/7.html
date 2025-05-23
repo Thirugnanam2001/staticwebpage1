@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Aadhaar Card Form
+        </title>
+        <style>
+            body{
+                border-radius: 20px;
+            }
+            .card {
+                height: 70vh;
+                width: 350px;
+                padding: 20px;
+                margin: 10% 30% 10% 30%;
+                background-color: #f2f2f2;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                align-items:center;
+                text-align: center;
+            }
+            .card h2 {
+                margin-bottom: 10px;
+            }
+            .card label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .card input[type=text], .card input[type=number]{
+                width:300px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-bottom:15px;
+            }
+            .card button{
+                background-color: #4caf50;
+                color: white;
+                padding:10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .card button:hover{
+                background-color: #3e8e41;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="card">
+            <h2>Aadhaar Card Form</h2>
+            <form>
+                <label for="aadhaar_number">Aadhaar Number:</label>
+                <input type="text" id="aadhaar_number" name="aadhaar_number" placeholder="12-digit Aadhar Number" required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full Number" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" required>
+                <br>
+                <lable for="dob">DOB:</lable>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                <br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+</html>
